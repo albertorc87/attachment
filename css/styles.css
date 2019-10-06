@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #444141;
+  background-color: #f9f9f9;
+}
+.markdown_convert {
+  color: #858484;
+  width: 600px;
+  margin: 0 auto;
+}
+.markdown_convert .markdown_convert_header ul {
+  padding: 0;
+  border: 1px solid #007093;
+  border-radius: 5px 5px 0 0;
+  background: #007093;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1 0 auto;
+  padding: 5px;
+}
+.markdown_convert .markdown_convert_header ul li {
+  padding: 0 5px;
+  margin: 0;
+  color: #FFF;
+}
+.markdown_convert .markdown_convert_header ul li .btn {
+  background-color: #007093;
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.markdown_convert .markdown_convert_header ul li .btn:hover {
+  background: #fff;
+  color: #007093;
+}
+.markdown_convert .markdown_convert_body .marktextarea {
+  border-radius: 0 0 5px 5px;
+  display: block;
+    padding: .6rem 1rem;
+    width: 100%;
+    border: 1px solid #DADBDC;
+  border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: inset 0 1px 3px 0 rgba(46, 50, 54, 0.09);
+    box-shadow: inset 0 1px 3px 0 rgba(46, 50, 54, 0.09);
+    color: #444141;
+}
+
+.markdown_convert_footer {
+  padding: 10px 10px 10px 0;
+}
+
+.labels {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+textarea {
+  resize: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

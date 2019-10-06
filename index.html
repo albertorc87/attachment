@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attachment files</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div style="width:100%;margin: 10px">
+		<div class="markdown_convert">
+	        <div class="markdown_convert_header">
+	            <ul>
+	                <li><button name="bold" class="btn"><i class="fas fa-bold"></i></button></li>
+	                <li><button name="italic" class="btn"><i class="fas fa-italic"></i></button></li>
+	                <li><button name="underline" class="btn"><i class="fas fa-underline"></i></button></li>
+	                <li><button name="code" class="btn"><i class="fas fa-code"></i></button></li>
+	                <li><button name="link" class="btn"><i class="fas fa-link"></i></button></li>
+	                <li><button name="image" class="btn"><i class="fas fa-image"></i></button></li>
+	                <li><button name="list-ul" class="btn"><i class="fas fa-list-ul"></i></button></li>
+	                <li><button name="list-ol" class="btn"><i class="fas fa-list-ol"></i></button></li>
+	                <li>
+		                <label for="file-input"><button name="attachment" id="attachment" class="btn"><i class="fas fa-paperclip"></i></button></label>
+		                <input id="file-input" type="file" style="display:none" multiple/>
+		            </li>
+	            </ul>
+	        </div>
+	        <div class="markdown_convert_body">
+	            <textarea name="post" cols="40" rows="25" required="" id="id_post" class="marktextarea"></textarea>
+	        </div>
+	        <div class="markdown_convert_footer" id="add_labels">
+	        </div>
+	    </div>
+	</div>
+	<script>
+		document.getElementById("attachment").addEventListener('click', function(){
+			document.getElementById("file-input").click();
+		});
+		document.getElementById("file-input").addEventListener('change', function(){
+			let pos = this.files.length -1;
+			document.getElementById("add_labels").innerHTML += `<div class="labels">${this.files[pos].name}</div>`;
+		});
+	</script>
+</body>
+	
+</html>
